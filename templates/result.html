@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            margin: 0;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .result-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: #333;
+        }
+        .result-message {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #ff758c;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .retry-btn {
+            background: linear-gradient(90deg, #ff758c, #ff7eb3);
+            color: white;
+            padding: 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .retry-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 117, 140, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>💖 Your Prediction Result 💖</h1>
+
+    <div class="result-container">
+        <h2 class="result-message">Prediction: {{ prediction }}</h2>
+        <p>Your prediction result for heart disease is displayed above.</p>
+        
+        <div class="button-container">
+            <a href="/">
+                <button class="retry-btn">🔄 Try Again</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
